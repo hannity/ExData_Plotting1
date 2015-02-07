@@ -1,5 +1,3 @@
-plot4 <- function(){
-
 	# read in data
 	data <- read.table("exdata-data-household_power_consumption/household_power_consumption.txt", header=TRUE, sep=";")
 	
@@ -41,4 +39,3 @@ plot4 <- function(){
 	plot(newdata$Time, glob.react.power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
 	dev.off()
-}

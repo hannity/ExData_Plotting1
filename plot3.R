@@ -1,5 +1,3 @@
-plot3 <- function(){
-
 	# read in data
 	data <- read.table("exdata-data-household_power_consumption/household_power_consumption.txt", header=TRUE, sep=";")
 	
@@ -20,4 +18,5 @@ plot3 <- function(){
 	lines(newdata$Time, sub3, col="blue")
 	legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
 	dev.off()
-}
+
+

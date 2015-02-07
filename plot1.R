@@ -1,5 +1,3 @@
-plot1 <- function(){
-
 	# read in data
 	data <- read.table("exdata-data-household_power_consumption/household_power_consumption.txt", header=TRUE, sep=";")
 	
@@ -13,4 +11,3 @@ plot1 <- function(){
 	png(file = "plot1.png", width = 480, height = 480)
 	hist(glob.act.power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 	dev.off()
-}
