@@ -21,7 +21,7 @@
 	par(mfrow = c(2,2))
 	
 	# plot 1
-	plot(newdata$Time, glob.act.power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+	plot(newdata$Time, glob.act.power, type="l", xlab="", ylab="Global Active Power")
 
 	#plot 2
 
@@ -32,7 +32,7 @@
 	plot(newdata$Time, sub1, type="l", col="black", ylab="Energy sub metering", xlab="")
 	lines(newdata$Time, sub2, col="red")
 	lines(newdata$Time, sub3, col="blue")
-	legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
+	legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, bty = "n")
 	
 	#plot 4
 
